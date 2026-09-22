@@ -8,6 +8,8 @@
 
 **Website:** https://copyright.info.vn/
 
+> **Language:** [English](README.md) · [Tiếng Việt](README.vi.md)
+
 This repository is the **public transparency and partnership repository** for cAuth Copyright Registry. It intentionally contains documentation, policies, architecture notes, non-sensitive examples and program material. **The production application source code is not stored here.**
 
 The production implementation is maintained separately in `cauth-copyright-registry-core`, a private repository operated under the project's access-control and release policy.

@@ -1,7 +1,5 @@
-# Versioning
+# Quản lý phiên bản
 
-- **Patch** — internal bug/security fix without compatibility changes.
-- **Minor** — backward-compatible feature or schema addition.
-- **Major** — breaking API, evidence package, deployment or trust-model change.
+Tài liệu public sử dụng semantic, release và changelog conventions ở mức phù hợp với phạm vi công khai.
 
-Evidence schema/package versions are independent compatibility identifiers.
+Implementation production được version và phát hành trong private core repository.

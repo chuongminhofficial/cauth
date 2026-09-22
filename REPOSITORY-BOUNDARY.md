@@ -1,19 +1,22 @@
-# Repository Boundary
+# Ranh giới Repository
 
-## Public repository: `cauth-copyright-registry`
+Repository này là public documentation / partnership surface.
 
-This is the public transparency, documentation and partner-program repository.
+## Có thể công khai
 
-Allowed here: architecture descriptions, policies, release notes, issue forms, non-sensitive examples and public program material.
+- kiến trúc;
+- trust boundaries;
+- security policy;
+- host/sponsor program;
+- release process;
+- các template không nhạy cảm.
 
-Not allowed here: production source code, internal tests, deployment implementation, operational secrets, customer/evidence records or private infrastructure inventories.
+## Không được công khai
 
-## Private repository: `cauth-copyright-registry-core`
+- production source code;
+- password, API token, private key, certificate;
+- SSO client secret và browser-session bridge secret;
+- dữ liệu khách hàng/evidence;
+- log production và inventory hạ tầng nhạy cảm.
 
-This is the private implementation repository. It is the controlled location for the PHP web application, Node.js API, deployment code, private integrations, internal tests and implementation-specific engineering material.
-
-Access is granted on a least-privilege basis and can be revoked independently from host status.
-
-## Production systems
-
-Production credentials, certificates, private keys, databases, evidence records and runtime logs are managed outside GitHub and should use approved secret/storage controls.
+Mọi source proprietary phải ở private core repository.

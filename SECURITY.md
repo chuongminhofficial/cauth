@@ -1,27 +1,29 @@
-# Security Policy
+# Chính sách bảo mật
 
-## Scope
+## Phạm vi
 
-This repository is a public documentation and partnership surface. The production implementation is maintained separately in a private repository.
+Repository này là bề mặt tài liệu và hợp tác công khai. Phần production được quản lý riêng trong repository private.
 
-## Reporting a vulnerability
+## Báo cáo lỗ hổng
 
-Do not open a public GitHub issue for a security vulnerability.
+Không mở public GitHub issue cho vulnerability.
 
-Use the security contact route on the project website and identify the request as a **Security vulnerability report**:
+Dùng kênh liên hệ bảo mật trên website và ghi rõ yêu cầu là **Security vulnerability report**:
 
 https://copyright.info.vn/contact.php
 
-Include only the minimum technical information needed to reproduce the issue. Do not attach credentials, private keys, bearer tokens, customer records, production database extracts, or full production logs.
+Chỉ cung cấp thông tin kỹ thuật tối thiểu cần để tái hiện lỗi. Không đính kèm credential, private key, bearer token, dữ liệu khách hàng, dump production database hoặc production log đầy đủ.
 
-## Safe report contents
+## Nội dung báo cáo an toàn
 
-Useful information includes the affected component or route, reproducible steps, expected versus observed behavior, impact, and redacted request IDs or timestamps.
+Thông tin hữu ích gồm component/route bị ảnh hưởng, bước tái hiện, hành vi mong đợi và thực tế, tác động, cùng request ID hoặc timestamp đã được che dữ liệu.
 
-## Disclosure
+## Công bố
 
-Public disclosure is coordinated after remediation or containment and after reviewing privacy and operational impact.
+Việc công bố công khai được phối hợp sau khi remediation hoặc containment hoàn tất và sau khi đánh giá tác động về privacy và vận hành.
 
-## Repository hygiene
+## Vệ sinh repository
 
-The public repository must never contain passwords, API tokens, private keys, certificates, cloud credentials, SMTP credentials, SSO client secrets, bridge secrets, customer/evidence data, production logs, or private infrastructure inventories.
+Repository public tuyệt đối không được chứa password, API token, private key, certificate, cloud credential, SMTP credential, SSO client secret, bridge secret, customer/evidence data, production log hoặc inventory hạ tầng riêng tư.
+
+> **Ngôn ngữ:** [English](SECURITY.md) · [Tiếng Việt](SECURITY.md)

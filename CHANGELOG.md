@@ -1,9 +1,9 @@
-# Changelog
+# Nhật ký thay đổi
 
-## 2026-09-22 — Private Core Baseline
+## Unreleased
 
-- Consolidated the web application and API into a private mono-repository.
-- Added governance, security, regional host, sponsorship, transparency and operations documentation.
-- Removed runtime secrets, private CA material, dependency directories and font binaries from the source repository snapshot.
-- Preserved production CSS/JavaScript build artifacts.
-- Added PHP and Node.js checks.
+- Củng cố ranh giới giữa repository public và core private.
+- Bổ sung tài liệu tiếng Việt cho các tài liệu công khai.
+- Tiếp tục chuẩn hóa quy trình regional host, sponsor và minh bạch.
+
+> Lưu ý: repository này chỉ công bố tài liệu; implementation production được quản lý trong core private.

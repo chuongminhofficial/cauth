@@ -1,5 +1,5 @@
-# Code of Conduct
+# Quy tắc ứng xử
 
-We expect maintainers, partners, host operators, sponsors and collaborators to communicate professionally and act in good faith.
+Chúng ta xây dựng một không gian hợp tác chuyên nghiệp, tôn trọng và an toàn cho maintainer, contributor, host operator, sponsor và đối tác.
 
-Harassment, intimidation, discrimination, credential abuse, unauthorized access, doxxing and deliberate disclosure of private operational material are not accepted.
+Không chấp nhận quấy rối, đe dọa, phân biệt đối xử, công khai dữ liệu riêng tư hoặc cố ý đưa secret vào các kênh công cộng.

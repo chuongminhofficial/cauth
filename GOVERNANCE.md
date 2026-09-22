@@ -1,17 +1,19 @@
-# Governance
+# Quản trị dự án
 
-## Roles
+## Vai trò
 
-**Core Maintainers** — architecture, releases, security decisions and production access.
+**Core Maintainers** — phụ trách kiến trúc, release, quyết định bảo mật và quyền truy cập production.
 
-**Security Reviewers** — authentication, authorization, evidence integrity, secret handling and deployment review.
+**Security Reviewers** — review xác thực, phân quyền, tính toàn vẹn evidence, xử lý secret và triển khai.
 
-**Host Operators** — approved country infrastructure and local operations. Host status does not automatically grant source or repository administration.
+**Host Operators** — vận hành hạ tầng quốc gia đã được phê duyệt. Trạng thái host không tự động cấp quyền source hoặc quyền quản trị repository.
 
-**Sponsors / Strategic Partners** — controlled visibility into milestones, reports and project materials according to the applicable agreement.
+**Sponsors / Strategic Partners** — nhận quyền xem milestone, báo cáo và tài liệu theo thỏa thuận tương ứng.
 
-## Separation of duties
+## Phân tách trách nhiệm
 
-Production authority, source-review authority and infrastructure authority are intentionally separated.
+Quyền production, quyền review source và quyền hạ tầng được cố ý tách biệt.
 
-Changes to authentication, evidence schemas, cryptographic signing, storage ACLs, host trust and destructive database operations require explicit maintainer review.
+Các thay đổi đối với authentication, schema evidence, ký mật mã, ACL storage, trust của host và thao tác database có tính hủy dữ liệu phải được maintainer review rõ ràng.
+
+> **Ngôn ngữ:** [English](GOVERNANCE.md) · [Tiếng Việt](GOVERNANCE.md)
