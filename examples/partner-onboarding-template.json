@@ -1,0 +1,64 @@
+{
+  "country": "",
+  "legal_entity": "",
+  "representative": {
+    "full_name": "",
+    "title": "",
+    "website": "",
+    "public_email": ""
+  },
+  "infrastructure": {
+    "hostname": "",
+    "public_ip": "",
+    "region": "",
+    "os": "",
+    "capacity": "",
+    "cdn_dns": ""
+  },
+  "domain": {
+    "primary": "",
+    "aliases": []
+  },
+  "email": {
+    "smtp_host": "",
+    "smtp_port": 587,
+    "from_address": ""
+  },
+  "telegram": {
+    "bot_username": "",
+    "chat_id": "",
+    "token_handoff": "secure-vault-only"
+  },
+  "sso": {
+    "profile_url": "",
+    "issuer": "",
+    "client_id": "",
+    "client_secret_handoff": "secure-vault-only"
+  },
+  "storage": {
+    "r2_or_s3_endpoint": "",
+    "bucket": "",
+    "public_base_url": ""
+  },
+  "branding": {
+    "name": "",
+    "logo": "",
+    "favicon": "",
+    "primary_color": "",
+    "footer_legal": ""
+  },
+  "operations": {
+    "admin_identities": [],
+    "monitoring": "",
+    "backup_policy": "",
+    "incident_contact": ""
+  },
+  "secrets": {
+    "ssh_password": "secure-vault-only",
+    "api_secret": "secure-vault-only",
+    "smtp_password": "secure-vault-only",
+    "r2_secret": "secure-vault-only",
+    "telegram_bot_token": "secure-vault-only",
+    "sso_client_secret": "secure-vault-only"
+  }
+}

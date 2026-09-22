@@ -1,0 +1,37 @@
+name: Sponsor / Strategic Partner Interest
+description: Express interest in supporting cAuth
+labels: ["partner:sponsor", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Initial interest only. Do not include bank details, private contracts, passwords or other confidential information.
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact / public website
+    validations:
+      required: true
+  - type: dropdown
+    id: support
+    attributes:
+      label: Support area
+      options:
+        - Infrastructure
+        - Security / Assurance
+        - Regional host
+        - Technology / integrations
+        - Documentation / developer tooling
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What would you like to support?

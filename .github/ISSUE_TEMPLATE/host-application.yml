@@ -1,0 +1,65 @@
+name: Regional Host — Expression of Interest
+description: Apply to operate an approved cAuth host in a country
+title: "[HOST] "
+labels: ["partner:host", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Initial interest only. Do not enter passwords, API secrets, SSH credentials, private keys, SMTP passwords, client secrets, or customer/evidence data.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Legal entity / organization
+    validations:
+      required: true
+  - type: input
+    id: representative
+    attributes:
+      label: Proposed representative
+    validations:
+      required: true
+  - type: input
+    id: public-contact
+    attributes:
+      label: Public contact
+      description: Email or website only. No secrets.
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Proposed primary domain
+  - type: dropdown
+    id: hosting
+    attributes:
+      label: Hosting model
+      options:
+        - Dedicated VPS
+        - Bare metal
+        - Cloud VM
+        - Private cloud
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: operations
+    attributes:
+      label: Operations summary
+      description: Monitoring, backups, security owner and expected availability.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      options:
+        - label: I understand that host approval is subject to technical/security review and agreement.
+          required: true
+        - label: I will not submit credentials or private keys through GitHub.
+          required: true

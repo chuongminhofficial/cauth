@@ -1,0 +1,46 @@
+name: Public repository boundary
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject implementation source paths
+        shell: bash
+        run: |
+          set -euo pipefail
+          forbidden_dirs=(apps src server api web includes vendor node_modules)
+          for d in "${forbidden_dirs[@]}"; do
+            if [[ -d "$d" ]]; then echo "Forbidden implementation directory present: $d"; exit 1; fi
+          done
+      - name: Reject common executable source files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find . -type f \( -name '*.php' -o -name '*.js' -o -name '*.ts' -o -name '*.tsx' -o -name '*.jsx' -o -name 'package.json' -o -name 'composer.json' \) -not -path './.git/*' | grep -q .; then
+            echo "Implementation source detected in public repository."; exit 1
+          fi
+      - name: Check for secret filenames
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find . -type f \( -name '*.pem' -o -name '*.key' -o -name '*.p12' -o -name '*.pfx' -o -name '.env' -o -name '*secret*' \) -not -path './.git/*' | grep -q .; then
+            echo "Potential secret-bearing file detected."; exit 1
+          fi
+      - name: Validate JSON examples
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for p in Path('examples').glob('*.json'):
+              json.loads(p.read_text(encoding='utf-8'))
+              print(f'valid: {p}')
+          PY

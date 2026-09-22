@@ -1,0 +1,4 @@
+# Replace placeholders before requiring reviews.
+* @YOUR-ORG/maintainers
+/docs/ @YOUR-ORG/maintainers
+/.github/ @YOUR-ORG/maintainers
